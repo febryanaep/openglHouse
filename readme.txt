@@ -1,0 +1,1 @@
+ini hasil dari adynura
