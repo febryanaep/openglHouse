@@ -1,0 +1,42 @@
+# Project: openglHouse
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = object/Main.o object/Color.o object/Vector.o object/Point.o object/Image.o $(RES)
+LINKOBJ  = object/Main.o object/Color.o object/Vector.o object/Point.o object/Image.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -lglut32 -lglu32 -lopengl32 -lwinmm -lgdi32  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = openglHouse.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before openglHouse.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "openglHouse.exe" $(LIBS)
+
+object/Main.o: Main.cpp
+	$(CPP) -c Main.cpp -o object/Main.o $(CXXFLAGS)
+
+object/Color.o: source/Color.cpp
+	$(CPP) -c source/Color.cpp -o object/Color.o $(CXXFLAGS)
+
+object/Vector.o: source/Vector.cpp
+	$(CPP) -c source/Vector.cpp -o object/Vector.o $(CXXFLAGS)
+
+object/Point.o: source/Point.cpp
+	$(CPP) -c source/Point.cpp -o object/Point.o $(CXXFLAGS)
+
+object/Image.o: source/Image.c
+	$(CPP) -c source/Image.c -o object/Image.o $(CXXFLAGS)
