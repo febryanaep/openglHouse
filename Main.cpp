@@ -3,17 +3,17 @@
 #include <stdlib.h>
 #include <GL/glut.h>
 
-
+#include "include/House3D.h"
 #include "include/Image.h"
 
-#define TEXTURE_LANTAI "images/lantai.rgb"
+#define TEXTURE_FLOOR "images/lantai.rgb"
 
 using namespace std;
 
 GLfloat ctf[4][2] = { {-2,-2}, { 2,-2}, { 2, 2}, {-2, 2} };
 GLfloat ctw[4][2] = { {-1,-1}, { 1,-1}, { 1, 1}, {-1, 1} };
 
-GLuint textureLantai;
+GLuint textureFloor;
 
 GLfloat angle, aspect;
 GLfloat rx, ry, rxo, ryo;
@@ -21,16 +21,17 @@ GLfloat cx, cy, cz, cxo, cyo, czo;
 
 int xo, yo, button;
 
+House3D house;
 
 
 void loadTextureFloor(void) {
      IMAGE *img;
      GLenum gluerr;
 
-     glGenTextures(1, &textureLantai);
-     glBindTexture(GL_TEXTURE_2D, textureLantai);
+     glGenTextures(1, &textureFloor);
+     glBindTexture(GL_TEXTURE_2D, textureFloor);
   
-     img = ImageLoad(TEXTURE_LANTAI);
+     img = ImageLoad(TEXTURE_FLOOR);
      gluerr = gluBuild2DMipmaps(GL_TEXTURE_2D, 3, img->sizeX, img->sizeY, GL_RGB, GL_UNSIGNED_BYTE, (GLvoid *)(img->data));
   
      if (gluerr) {
@@ -46,7 +47,7 @@ void loadTextureFloor(void) {
 
 void loadTexture(void) {
      loadTextureFloor();
-     
+          
 }
 
 void display(void){
@@ -56,7 +57,7 @@ void display(void){
      
      glEnable(GL_TEXTURE_2D);     
      
-     glBindTexture(GL_TEXTURE_2D, textureLantai);
+     glBindTexture(GL_TEXTURE_2D, textureFloor);
      glBegin(GL_QUADS);
      glTexCoord2fv(ctf[0]); glVertex3f(-100, 0,  100);
      glTexCoord2fv(ctf[1]); glVertex3f( 100, 0,  100);
@@ -68,7 +69,7 @@ void display(void){
     
     glDisable(GL_TEXTURE_2D);
     
-    
+    house.drawCreateHouse();
 
 	glFlush();
 }

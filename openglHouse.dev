@@ -1,9 +1,9 @@
 [Project]
 FileName=openglHouse.dev
 Name=openglHouse
-UnitCount=9
+UnitCount=11
 Type=1
-Ver=2
+Ver=1
 ObjFiles=
 Includes=
 Libs=
@@ -121,7 +121,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit10]
-FileName=include\Image.h
+FileName=include\House3D.h
 CompileCpp=1
 Folder=include
 Compile=1
@@ -131,7 +131,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit11]
-FileName=source\Image.c
+FileName=source\House3D.cpp
 CompileCpp=1
 Folder=source
 Compile=1
