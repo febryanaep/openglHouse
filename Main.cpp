@@ -189,9 +189,13 @@ void init(void) {
 	glEnable(GL_NORMALIZE);
 
 	angle = 60;
-	cz    = 50;
+	cz    = 60;
 	
 	rx = ry = cx = cy = 0;
+	cx = 0;
+	cy = 10;
+	rx = 20;
+	ry = 20;
 }
 
 int main(int argc, char *argv[])
