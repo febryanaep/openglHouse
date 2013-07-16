@@ -1,19 +1,18 @@
 # Project: openglHouse
-# Makefile created by Dev-C++ 4.9.9.2
+# Makefile created by Dev-C++ 5.0.0.9
 
-CPP  = g++.exe
-CC   = gcc.exe
-WINDRES = windres.exe
-RES  = 
-OBJ  = object/Main.o object/Color.o object/Vector.o object/Point.o object/Image.o object/House3D.o $(RES)
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = object/Main.o object/Color.o object/Vector.o object/Point.o object/Image.o object/House3D.o $(RES)
 LINKOBJ  = object/Main.o object/Color.o object/Vector.o object/Point.o object/Image.o object/House3D.o $(RES)
-LIBS =  -L"C:/Dev-Cpp/lib" -lwinmm -lgdi32 lib/libglu32.a lib/libglut32.a lib/libopengl32.a  
-INCS =  -I"C:/Dev-Cpp/include" 
-CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
-BIN  = openglHouse.exe
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib" -static-libstdc++ -static-libgcc -lwinmm -lgdi32 lib/libglu32.a lib/libglut32.a lib/libopengl32.a  
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" 
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" 
+BIN      = openglHouse.exe
 CXXFLAGS = $(CXXINCS)  
-CFLAGS = $(INCS)  
-RM = rm -f
+CFLAGS   = $(INCS)  
+RM       = rm -f
 
 .PHONY: all all-before all-after clean clean-custom
 

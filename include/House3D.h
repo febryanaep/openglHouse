@@ -26,6 +26,7 @@ class House3D{
              void draw3();
              void draw4();
              void draw5();
+             void draw6();
              
              
              void drawBasePlate(GLint width, GLint length, Color color);

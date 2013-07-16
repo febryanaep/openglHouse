@@ -30,6 +30,7 @@ void House3D::drawCreateHouse() {
      draw3();
 	 draw4();
      draw5();
+     draw6();
 	 
      glPopMatrix();    
 }
@@ -457,6 +458,92 @@ void House3D::draw5() {
 	
 }
 
+void House3D::draw6() {
+	
+
+	glPushMatrix();
+	glTranslated(12, 0.4, 12);
+	drawPlate(1, 1, this->mediumGrey);
+	glPopMatrix();
+
+	for(int x = 9; x < 12; x++) {
+		for(int z = 12; z < 15; z++) {
+			glPushMatrix();
+			glTranslated(x, 0.4, z);
+			if((x + z) % 2 == 0) {
+				drawPlate(1, 1, this->mediumGrey);
+			} else {
+				drawPlate(1, 1, this->darkGrey);
+			}
+			glPopMatrix();
+		}
+	}
+
+	for(int x = 8; x < 11; x++) {
+		for(int z = 15; z < 18; z++) {
+			glPushMatrix();
+			glTranslated(x, 0.4, z);
+			if((x + z) % 2 == 0) {
+				drawPlate(1, 1, this->mediumGrey);
+			} else {
+				drawPlate(1, 1, this->darkGrey);
+			}
+			glPopMatrix();
+		}
+	}
+
+	for(int x = 7; x < 10; x++) {
+		for(int z = 18; z < 21; z++) {
+			glPushMatrix();
+			glTranslated(x, 0.4, z);
+			if((x + z) % 2 == 0) {
+				drawPlate(1, 1, this->mediumGrey);
+			} else {
+				drawPlate(1, 1, this->darkGrey);
+			}
+			glPopMatrix();
+		}
+	}
+
+	for(int x = 6; x < 9; x++) {
+		for(int z = 21; z < 24; z++) {
+			glPushMatrix();
+			glTranslated(x, 0.4, z);
+			if((x + z) % 2 == 0) {
+				drawPlate(1, 1, this->mediumGrey);
+			} else {
+				drawPlate(1, 1, this->darkGrey);
+			}
+			glPopMatrix();
+		}
+	}
+
+	for(int x = 7; x < 10; x++) {
+		for(int z = 24; z < 27; z++) {
+			glPushMatrix();
+			glTranslated(x, 0.4, z);
+			if((x + z) % 2 == 0) {
+				drawPlate(1, 1, this->mediumGrey);
+			} else {
+				drawPlate(1, 1, this->darkGrey);
+			}
+			glPopMatrix();
+		}
+	}
+	
+	for(int x = 7; x < 10; x++) {
+		for(int z = 27; z < 29; z++) {
+			glPushMatrix();
+			glTranslated(x, 0.4, z);
+			if((x + z) % 2 == 0) {
+				drawPlate(1, 1, this->mediumGrey);
+			} else {
+				drawPlate(1, 1, this->darkGrey);
+			}
+			glPopMatrix();
+		}
+	}
+}
 
 void House3D::drawMailBox(GLint angle) {
 	GLdouble pi = 3.14159265;
