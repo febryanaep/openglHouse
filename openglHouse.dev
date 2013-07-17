@@ -12,7 +12,7 @@ ResourceIncludes=
 MakeIncludes=
 Compiler=
 CppCompiler=
-Linker=-lwinmm -lgdi32_@@_lib/libglu32.a_@@_lib/libglut32.a_@@_lib/libopengl32.a_@@_
+Linker=_@@_lib/libglu32.a_@@_lib/libglut32.a_@@_lib/libopengl32.a_@@_
 IsCpp=1
 Icon=
 ExeOutput=
@@ -27,7 +27,7 @@ CustomMakefile=
 IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
-CompilerSettings=0000000000000000000000000
+CompilerSettings=0000000000000000000000
 LogOutput=
 LogOutputEnabled=0
 
