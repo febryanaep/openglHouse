@@ -31,6 +31,20 @@ void House3D::drawCreateHouse() {
 	 draw4();
      draw5();
      draw6();
+     draw7();
+	 draw8();
+	 draw9();
+	 draw10();
+	 draw11();
+	 draw12();
+	 draw13();
+	 draw14();
+	 draw15();
+	 draw16();
+	 draw17();
+	 draw18();
+	 draw19();
+	 draw20();
 	 
      glPopMatrix();    
 }
@@ -517,6 +531,8 @@ void House3D::draw6() {
 			glPopMatrix();
 		}
 	}
+	
+	
 
 	for(int x = 7; x < 10; x++) {
 		for(int z = 24; z < 27; z++) {
@@ -544,6 +560,877 @@ void House3D::draw6() {
 		}
 	}
 }
+
+void House3D::draw7() {
+
+	glPushMatrix();
+	glTranslated(16, 1.6, 13);
+	drawPlate2(7, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 1.6, 4);
+	drawPlate2(12, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(27, 1.6, 4);
+	drawPlate2(1, 9, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(27, 1.6, 13);
+	drawPlate2(2, 1, this->white);
+	glPopMatrix();
+	
+	glPushMatrix();
+	glTranslated(19, 1.6, 16);
+	drawAngularPlate(0, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(19.2, 1.8, 16);
+	glRotated(90, 0, 0, 1);
+	drawRoundPlate(this->darkGreen);
+	glPopMatrix();
+
+
+	glPushMatrix();
+	glTranslated(19, 1.6, 14);
+	drawPlate2(1, 2, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(19, 1.6, 17);
+	drawPlate2(1, 10, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(28, 1.6, 13);
+	drawPlate2(1, 15, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 0.8, 13);
+	drawRoundPlate2(this->mediumGrey);
+	glPopMatrix();
+}
+
+void House3D::draw8() {
+	/*glPushMatrix();
+	glTranslated(3, 0.4, 12);
+	drawPlate(6, 2, this->reddishBrown);
+		glPushMatrix();
+		glTranslated(0, 0.4, 0);
+		drawRoundPlate(this->reddishBrown);
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(2, 0.4, 0);
+		drawRoundPlate(this->reddishBrown);
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(3, 0.4, 0);
+		drawRoundPlate(this->reddishBrown);
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(5, 0.4, 0);
+		drawRoundPlate(this->reddishBrown);
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(1, 0.4, 1);
+		drawRoundPlate(this->reddishBrown);
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(0, 0.4, 1);
+		drawRoundPlate(this->darkGreen);
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(2, 0.8, 0);
+		drawRoundPlate(this->darkGreen);
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(4, 0.4, 1);
+		drawRoundPlate(this->darkGreen);
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(5, 0.8, 0);
+		drawRoundPlate(this->darkGreen);
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(1, 0.8, 1);
+		drawRoundPlate(this->brightRed);
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(3, 0.4, 1);
+		drawRoundPlate(this->brightRed);
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(4, 0.4, 0);
+		drawRoundPlate(this->brightRed);
+		glPopMatrix();
+	glPopMatrix();*/
+
+	glPushMatrix();
+	glTranslated(2, 1.6, 2);
+	drawPlate2(1, 4, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(2, 1.6, 6);
+	drawPlate2(1, 6, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(3, 1.6, 11);
+	drawPlate2(6, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(3, 1.6, 2);
+	drawPlate2(8, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(11, 1.6, 2);
+	drawPlate2(5, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(13, 1.6, 11);
+	drawPlate2(4, 1, this->white);
+	glPopMatrix();
+	
+	glPushMatrix();
+	glTranslated(15, 1.6, 2);
+	drawPlate2(1, 3, this->white);
+	glPopMatrix();
+	
+	glPushMatrix();
+	glTranslated(16, 1.6, 12);
+	drawPlate2(1, 1, this->white);
+	glPopMatrix();
+}
+
+void House3D::draw9() {
+	glPushMatrix();
+	glTranslated(2, 2.8, 2);
+	drawPlate(14, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(12, 2.8, 2);
+	drawPlate(1, 1, this->mediumGrey);
+	glPopMatrix();	
+
+    glPushMatrix();
+	glTranslated(15, 2.8, 3);
+	drawPlate(1, 2, this->mediumGrey);
+	glPopMatrix();	
+
+	glPushMatrix();
+	glTranslated(8, 2.8, 11);
+	drawPlate(1, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(4, 2.8, 11);
+	drawPlate(4, 2, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(2, 2.8, 11);
+	drawPlate(2, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(2, 2.8, 9);
+	drawPlate(1, 2, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(1, 2.8, 5);
+	drawPlate(2, 4, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(2, 2.8, 3);
+	drawPlate(1, 2, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 2.8, 4);
+	drawPlate(12, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(13, 2.8, 11);
+	drawPlate(4, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(27, 2.8, 5);
+	drawPlate(1, 9, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(28, 2.8, 13);
+	drawPlate(1, 15, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(17, 2.8, 13);
+	drawPlate(6, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(19, 2.8, 14);
+	drawPlate(1, 13, this->mediumGrey);
+	glPopMatrix();
+
+    glPushMatrix();
+	glTranslated(16, 2.8, 12);
+	drawPlate(1, 2, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 2, 13);
+	drawRoundPlate2(this->mediumGrey);
+	glPopMatrix();
+}
+
+void House3D::draw10() {
+	glPushMatrix();
+	glTranslated(3, 3.2, 2);
+	drawPlate2(8, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(11, 3.2, 2);
+	drawPlate2(5, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 3.2, 3);
+	drawPlate2(1, 2, this->white);
+	glPopMatrix();
+    
+    glPushMatrix();
+	glTranslated(13, 3.2, 11);
+	drawPlate2(3, 1, this->white);
+	glPopMatrix();
+    
+	glPushMatrix();
+	glTranslated(16, 3.2, 11);
+	drawPlate2(1, 2, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(8, 3.2, 11);
+	drawPlate2(1, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(3, 3.2, 11);
+	drawPlate2(1, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(2, 3.2, 9);
+	drawPlate2(1, 3, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(2, 3.2, 2);
+	drawPlate2(1, 3, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 3.2, 4);
+	drawPlate2(12, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(27, 3.2, 5);
+	drawPlate2(1, 2, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(27, 3.2, 11);
+	drawPlate2(1, 3, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(28, 3.2, 13);
+	drawPlate2(1, 15, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 3.2, 13);
+	drawPlate2(7, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(19, 3.2, 14);
+	drawPlate2(1, 13, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 3.2, 13);
+	drawRoundPlate2(this->mediumGrey);
+	glPopMatrix();
+}
+
+void House3D::draw11() {
+	glPushMatrix();
+	glTranslated(15, 4.4, 4);
+	drawPlate2(13, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(27, 4.4, 5);
+	drawPlate2(1, 2, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(27, 4.4, 11);
+	drawPlate2(1, 2, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(28, 4.4, 13);
+	drawPlate2(1, 15, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(27, 4.4, 13);
+	drawAngularPlate(90, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(22, 4.4, 13);
+	drawAngularPlate(90, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(21, 4.4, 13);
+	drawAngularPlate(90, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 4.4, 13);
+	drawPlate2(5, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(19, 4.4, 14);
+	drawPlate2(1, 13, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(21, 5.6, 13.8);
+	glRotated(90, 1, 0, 0);
+	drawFlatTile(2, 1, this->brightRed);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(27, 5.6, 13.8);
+	glRotated(90, 1, 0, 0);
+	drawRoundPlate(this->black);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 4.4, 13);
+	drawRoundPlate2(this->mediumGrey);
+	glPopMatrix();
+}
+
+void House3D::draw12() {
+	glPushMatrix();
+	glTranslated(2, 4.4, 2);
+	drawPlate2(14, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 4.4, 3);
+	drawPlate2(1, 2, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(13, 4.4, 11);
+	drawPlate2(4, 1, this->white);
+	glPopMatrix();
+
+    glPushMatrix();
+	glTranslated(16, 4.4, 11);
+	drawPlate2(1, 2, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(8, 4.4, 11);
+	drawAngularPlate(90, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(8, 5.6, 11.5);
+	glRotated(90, 1, 0, 0);
+	drawRoundPlate(this->brightYellow);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(2, 4.4, 9);
+	drawPlate2(1, 3, this->white);
+	glPopMatrix();
+
+    glPushMatrix();
+	glTranslated(2, 4.4, 11);
+	drawPlate2(2, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(2, 4.4, 3);
+	drawPlate2(1, 2, this->white);
+	glPopMatrix();
+}
+
+void House3D::draw13() {
+	glPushMatrix();
+	glTranslated(3, 5.6, 2);
+	drawPlate2(12, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(11, 5.6, 2);
+	drawPlate2(2, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 5.6, 2);
+	drawPlate2(1, 2, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(13, 5.6, 11);
+	drawPlate2(4, 1, this->white);
+	glPopMatrix();
+
+    glPushMatrix();
+	glTranslated(16, 5.6, 11);
+	drawPlate2(1, 2, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(8, 5.6, 11);
+	drawPlate2(1, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(3, 5.6, 11);
+	drawPlate2(1, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(2, 5.6, 9);
+	drawPlate2(1, 3, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(2, 5.6, 2);
+	drawPlate2(1, 3, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 5.6, 4);
+	drawPlate2(12, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(27, 5.6, 4);
+	drawPlate2(1, 3, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(27, 5.6, 11);
+	drawPlate2(1, 3, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(28, 5.6, 13);
+	drawPlate2(1, 15, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 5.6, 13);
+	drawPlate2(7, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(19, 5.6, 14);
+	drawPlate2(1, 13, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 5.6, 13);
+	drawRoundPlate2(this->mediumGrey);
+	glPopMatrix();
+}
+
+void House3D::draw14() {
+	glPushMatrix();
+	glTranslated(2, 3.2, 5);
+	drawWindow(90);
+	glPopMatrix();
+	
+	glPushMatrix();
+	glTranslated(4, 3.2, 11);
+	drawWindow(180);
+	glPopMatrix();
+	
+	glPushMatrix();
+	glTranslated(27, 3.2, 7);
+	drawWindow(270);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(9, 0.8, 11);
+	drawDoor(180);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(23, 0.8, 13);
+	drawDoor(0);
+	glPopMatrix();
+	
+	glPushMatrix();
+	glTranslated(20, 0.8, 26);
+	drawDoorGarage(0);
+	glPopMatrix();
+}
+
+void House3D::draw15() {
+
+	glPushMatrix();
+	glTranslated(15, 6.8, 4);
+	drawPlate(12, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(27, 6.8, 4);
+	drawPlate(1, 10, this->mediumGrey);
+	glPopMatrix();
+    
+    glPushMatrix();
+	glTranslated(15, 6.8, 13);
+	drawPlate(1, 1, this->white);
+	glPopMatrix();
+    
+	glPushMatrix();
+	glTranslated(16, 6.8, 13);
+	drawPlate(13, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(19, 6.8, 14);
+	drawPlate(10, 13, this->mediumGrey);
+	glPopMatrix();
+	
+	glPushMatrix();
+	glTranslated(2, 6.8, 2);
+	drawPlate(14, 2, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(2, 6.8, 10);
+	drawPlate(15, 2, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(2, 6.8, 4);
+	drawPlate(1, 2, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 6.8, 11);
+	drawPlate(1, 2, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(2, 6.8, 6);
+	drawPlate(1, 4, this->mediumGrey);
+	glPopMatrix();
+
+	
+}
+
+void House3D::draw16() {	
+    glPushMatrix();
+	glTranslated(2, 7.2, 2);
+	drawPlate2(14, 1, this->white);
+	glPopMatrix();
+	
+	glPushMatrix();
+	glTranslated(2, 7.2, 2);
+	drawPlate2(1, 10, this->white);
+	glPopMatrix();
+    
+    glPushMatrix();
+	glTranslated(2, 7.2, 11);
+	drawPlate2(15, 1, this->white);
+	glPopMatrix(); 
+	
+	glPushMatrix();
+	glTranslated(15, 7.2, 2);
+	drawPlate2(1, 2, this->white);
+	glPopMatrix();
+
+    glPushMatrix();
+	glTranslated(16, 7.2, 11);
+	drawPlate2(1, 2, this->white);
+	glPopMatrix();
+     
+	glPushMatrix();
+	glTranslated(15, 7.2, 4);
+	drawPlate2(12, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(27, 7.2, 4);
+	drawPlate2(1, 9, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 7.2, 13);
+	drawPlate2(4, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(24, 7.2, 13);
+	drawPlate2(4, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(21, 7.2, 13);
+	drawPlate2(2, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(20, 7.2, 13);
+	drawRoofTileInverted(1, 90, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(23, 7.2, 13);
+	drawRoofTileInverted(1, 90, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 6.8, 13);
+	drawRoundPlate2(this->mediumGrey);
+	glPopMatrix();
+}
+
+void House3D::draw17() {
+	
+	glPushMatrix();
+	glTranslated(16, 8.4, 4);
+	drawPlate2(12, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(27, 8.4, 4);
+	drawPlate2(1, 9, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(24, 8.4, 13);
+	drawPlate2(4, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 8.4, 13);
+	drawPlate2(4, 1, this->white);
+	glPopMatrix();
+	
+	glPushMatrix();
+	glTranslated(16, 8.4, 11);
+	drawPlate2(1, 2, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 8, 13);
+	drawRoundPlate2(this->mediumGrey);
+	glPopMatrix();
+}
+
+void House3D::draw18() {
+	glPushMatrix();
+	glTranslated(16, 9.6, 4);
+	drawPlate2(12, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(27, 9.6, 4);
+	drawPlate2(1, 9, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 9.6, 13);
+	drawPlate2(4, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(24, 9.6, 13);
+	drawPlate2(4, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 9.6, 5);
+	drawPlate2(1, 2, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 9.6, 7);
+	drawRoofTileInverted(1, 0, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 9.6, 8);
+	drawPlate2(1, 3, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 9.6, 11);
+	drawAngularPlate(0, this->white);
+		glPushMatrix();
+		glTranslated(0.2, 0.2, 0);
+		glRotated(90, 0, 0, 1);
+		drawPlate(1, 1, this->mediumGrey);
+		glPopMatrix();
+
+		glPushMatrix();
+		glTranslated(-0.2, 0.2, 0);
+		glRotated(90, 0, 0, 1);
+		drawRoundPlate(this->darkGreen);
+		glPopMatrix();
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 9.6, 12);
+	drawPlate2(1, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 9.2, 13);
+	drawRoundPlate2(this->mediumGrey);
+	glPopMatrix();
+}
+
+void House3D::draw19() {
+	glPushMatrix();
+	glTranslated(16, 10.8, 4);
+	drawPlate2(10, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(26, 10.8, 4);
+	drawPlate2(2, 8, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(26, 10.8, 12);
+	drawPlate2(2, 2, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(24, 10.8, 13);
+	drawPlate2(2, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(18, 10.8, 13);
+	drawPlate2(2, 1, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 10.8, 12);
+	drawPlate2(2, 2, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(16, 10.8, 4);
+	drawPlate2(2, 8, this->white);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(20, 8.4, 13);
+	drawWindow(180);
+	glPopMatrix();
+}
+
+void House3D::draw20() {
+	glPushMatrix();
+	glTranslated(17, 12, 4);
+	drawPlate(5, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(20, 12, 4);
+	drawPlate(2, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(22, 12, 4);
+	drawPlate(5, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(17, 12, 13);
+	drawPlate(4, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(20, 12, 13);
+	drawPlate(2, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(22, 12, 13);
+	drawPlate(5, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(20, 8.4, 14);
+	drawFlatTile(4, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 10.8, 7);
+	drawPlate(1, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 11.2, 7);
+	drawPlate(1, 1, this->mediumGrey);
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(15, 10.4, 12);
+	drawRoofTileInverted(1, 270, this->mediumGrey);
+	glPopMatrix();
+}
+
+
+
 
 void House3D::drawMailBox(GLint angle) {
 	GLdouble pi = 3.14159265;
