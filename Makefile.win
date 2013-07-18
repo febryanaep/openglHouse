@@ -1,9 +1,6 @@
 # Project: openglHouse
 # Makefile created by Dev-C++ 4.9.9.2
 
-# This Makefile is written for syntax check!
-# Regenerate it if you want to use this Makefile to build.
-
 CPP  = g++.exe
 CC   = gcc.exe
 WINDRES = windres.exe
@@ -18,7 +15,7 @@ CXXFLAGS = $(CXXINCS)
 CFLAGS = $(INCS)  
 RM = rm -f
 
-.PHONY: all all-before all-after clean clean-custom $(OBJ) $(BIN)
+.PHONY: all all-before all-after clean clean-custom
 
 all: all-before openglHouse.exe all-after
 
@@ -27,21 +24,22 @@ clean: clean-custom
 	${RM} $(OBJ) $(BIN)
 
 $(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "openglHouse.exe" $(LIBS)
 
-object/Main.o:Main.cpp
-	$(CPP) -S Main.cpp -o nul $(CXXFLAGS)
+object/Main.o: Main.cpp
+	$(CPP) -c Main.cpp -o object/Main.o $(CXXFLAGS)
 
-object/Color.o:source/Color.cpp
-	$(CPP) -S source/Color.cpp -o nul $(CXXFLAGS)
+object/Color.o: source/Color.cpp
+	$(CPP) -c source/Color.cpp -o object/Color.o $(CXXFLAGS)
 
-object/Vector.o:source/Vector.cpp
-	$(CPP) -S source/Vector.cpp -o nul $(CXXFLAGS)
+object/Vector.o: source/Vector.cpp
+	$(CPP) -c source/Vector.cpp -o object/Vector.o $(CXXFLAGS)
 
-object/Point.o:source/Point.cpp
-	$(CPP) -S source/Point.cpp -o nul $(CXXFLAGS)
+object/Point.o: source/Point.cpp
+	$(CPP) -c source/Point.cpp -o object/Point.o $(CXXFLAGS)
 
-object/Image.o:source/Image.c
-	$(CPP) -S source/Image.c -o nul $(CXXFLAGS)
+object/Image.o: source/Image.c
+	$(CPP) -c source/Image.c -o object/Image.o $(CXXFLAGS)
 
-object/House3D.o:source/House3D.cpp
-	$(CPP) -S source/House3D.cpp -o nul $(CXXFLAGS)
+object/House3D.o: source/House3D.cpp
+	$(CPP) -c source/House3D.cpp -o object/House3D.o $(CXXFLAGS)
