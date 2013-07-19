@@ -28,7 +28,7 @@ void loadTextureFloor(void) {
      IMAGE *img;
      GLenum gluerr;
 
-     glGenTextures(1, &textureFloor);
+     //glGenTextures(1, &textureFloor);
      glBindTexture(GL_TEXTURE_2D, textureFloor);
   
      img = ImageLoad(TEXTURE_FLOOR);
