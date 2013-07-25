@@ -21,50 +21,134 @@ House3D::House3D() {
 	
 }
 
-void House3D::drawCreateHouse() {
+void House3D::drawCreateHouse(GLfloat draw) {
      glPushMatrix();
      glTranslated(-16, 0, -16);
-     drawBasePlate(32, 29, this->darkGreen);
-     draw1();
-     draw2();
-     draw3();
-	 draw4();
-     draw5();
-     draw6();
-     draw7();
-	 draw8();
-	 draw9();
-	 draw10();
-	 draw11();
-	 draw12();
-	 draw13();
-	 draw14();
-	 draw15();
-	 draw16();
-	 draw17();
-	 draw18();
-	 draw19();
-	 draw20();
-	 draw21();
-	 draw22();
-	 draw23();
-	 draw24();
-	 draw25();
-	 draw26();
-	 draw27();
-	 draw28();
-	 draw29();
-	 draw30();
-	 draw31();
-	 draw32();
-	 draw33();
-	 draw34();
-	 draw35();
-	 draw36();
-	 draw37();
-	 draw38();
-	 draw39();
-	 draw40();
+     draw41();
+     if (draw >= 0){
+        drawBasePlate(32, 29, this->darkGreen);         
+     }
+     if (draw >= 1){
+          draw1();
+     }
+     if (draw >= 2){
+        draw2();         
+     }     
+     if (draw >= 3){
+        draw3();         
+     }     
+     if (draw >= 4){
+        draw4();         
+     }     
+     if (draw >= 5){
+        draw5();         
+     }
+      if (draw >= 6){
+        draw6();         
+     }
+      if (draw >= 7){
+        draw7();         
+     }
+      if (draw >= 8){
+        draw8();         
+     }
+      if (draw >= 9){
+        draw9();         
+     }
+     if (draw >= 10){
+        draw10();
+     }
+     if (draw >= 11){
+          draw11();
+     }
+     if (draw >= 12){
+        draw12();         
+     }     
+     if (draw >= 13){
+        draw13();         
+     }     
+     if (draw >= 14){
+        draw14();         
+     }     
+     if (draw >= 15){
+        draw15();         
+     }
+      if (draw >= 16){
+        draw16();         
+     }
+      if (draw >= 17){
+        draw17();         
+     }
+      if (draw >= 18){
+        draw18();         
+     }
+      if (draw >= 19){
+        draw19();         
+     }
+     if (draw >= 20){
+        draw20();         
+     }
+     if (draw >= 21){
+          draw21();
+     }
+     if (draw >= 22){
+        draw22();         
+     }     
+     if (draw >= 23){
+        draw23();         
+     }     
+     if (draw >= 24){
+        draw24();         
+     }     
+     if (draw >= 25){
+        draw25();         
+     }
+      if (draw >= 26){
+        draw26();         
+     }
+      if (draw >= 27){
+        draw27();         
+     }
+      if (draw >= 28){
+        draw28();         
+     }
+      if (draw >= 29){
+        draw29();         
+     }
+     if (draw >= 30){
+        draw30();
+     }
+     if (draw >= 31){
+          draw31();
+     }
+     if (draw >= 32){
+        draw32();         
+     }     
+     if (draw >= 33){
+        draw33();         
+     }     
+     if (draw >= 34){
+        draw34();         
+     }     
+     if (draw >= 35){
+        draw35();         
+     }
+      if (draw >= 36){
+        draw36();         
+     }
+      if (draw >= 37){
+        draw37();         
+     }
+      if (draw >= 38){
+        draw38();         
+     }
+      if (draw >= 39){
+        draw39();         
+     }
+      if (draw >= 40){
+        draw40();         
+     }
+     
      
      glPopMatrix();    
 }
@@ -150,7 +234,7 @@ void House3D::draw1(){
 		drawPlate(8, 16, this->darkGrey);
 		glPopMatrix();
 		
-		glPushMatrix();
+		/*glPushMatrix();
 		glTranslated(3, 0.4, 3);
 		drawPlate(12, 8, this->darkBlue);
 		glPopMatrix();
@@ -163,7 +247,7 @@ void House3D::draw1(){
 		glPushMatrix();
 		glTranslated(17, 0.4, 5);
 		drawPlate(10, 8, this->darkBlue);
-		glPopMatrix();
+		glPopMatrix();*/
 	
 }
 
@@ -2622,6 +2706,38 @@ void House3D::draw40() {
 	glPopMatrix();
 }
 
+void House3D::draw41() {
+	glPushMatrix();
+    glTranslatef(0, 20, 0);
+    glScalef(0.5, 0.25, 0.25);  
+    cloud();
+    glPopMatrix();
+    
+    glPushMatrix();
+    glTranslatef(15, 17, 3);
+    glScalef(0.5, 0.25, 0.25);  
+    cloud();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(20, 17, -1);
+    glScalef(0.5, 0.25, 0.25);  
+    cloud();
+    glPopMatrix();
+        
+    glPushMatrix();
+    glTranslatef(5, 15, -2);
+    glScalef(0.5, 0.25, 0.25);  
+    cloud();
+    glPopMatrix();
+    
+    glPushMatrix();
+    glTranslatef(10, 20, 0);
+    glScalef(0.3, 0.3, 0.3);  
+    sun();
+    glPopMatrix();
+}
+
 
 
 void House3D::drawMailBox(GLint angle) {
@@ -3745,5 +3861,36 @@ void House3D::drawCube2(GLdouble width, GLdouble length, GLdouble height, Color 
     glTranslated(width / 2, height / 2, length / 2);
     glScaled(width, height, length);
     glutSolidCube(1.0);
+    glPopMatrix();
+}
+
+void House3D::cloud(){
+    
+     glPushMatrix();
+     glColor3f(1, 1, 1);
+     glutSolidSphere(10, 50, 50);
+     glPopMatrix();
+     glPushMatrix();
+     glTranslatef(10,0,1);
+     glutSolidSphere(5, 50, 50);
+     glPopMatrix();
+     glPushMatrix();
+     glTranslatef(-2,6,-2);
+     glutSolidSphere(7, 50, 50);
+     glPopMatrix();
+     glPushMatrix();
+     glTranslatef(-10,-3,0);
+     glutSolidSphere(7, 50, 50);
+     glPopMatrix();
+     glPushMatrix();
+     glTranslatef(6,-2,2);
+     glutSolidSphere(7, 50, 50);
+     glPopMatrix();
+    
+}
+void House3D::sun(){
+    glPushMatrix();
+    glColor3ub(255, 253, 116);
+    glutSolidSphere(10, 60, 60);
     glPopMatrix();
 }

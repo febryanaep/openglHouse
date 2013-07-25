@@ -5,8 +5,8 @@ CPP  = g++.exe
 CC   = gcc.exe
 WINDRES = windres.exe
 RES  = 
-OBJ  = object/Main.o object/Color.o object/Vector.o object/Point.o object/Image.o object/House3D.o $(RES)
-LINKOBJ  = object/Main.o object/Color.o object/Vector.o object/Point.o object/Image.o object/House3D.o $(RES)
+OBJ  = object/Main.o object/Color.o object/Vector.o object/Point.o object/Image.o object/House3D.o object/imageloader.o object/vec3f.o $(RES)
+LINKOBJ  = object/Main.o object/Color.o object/Vector.o object/Point.o object/Image.o object/House3D.o object/imageloader.o object/vec3f.o $(RES)
 LIBS =  -L"C:/Dev-Cpp/lib"  lib/libglu32.a lib/libglut32.a lib/libopengl32.a  
 INCS =  -I"C:/Dev-Cpp/include" 
 CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
@@ -43,3 +43,9 @@ object/Image.o: source/Image.c
 
 object/House3D.o: source/House3D.cpp
 	$(CPP) -c source/House3D.cpp -o object/House3D.o $(CXXFLAGS)
+
+object/imageloader.o: source/imageloader.cpp
+	$(CPP) -c source/imageloader.cpp -o object/imageloader.o $(CXXFLAGS)
+
+object/vec3f.o: source/vec3f.cpp
+	$(CPP) -c source/vec3f.cpp -o object/vec3f.o $(CXXFLAGS)

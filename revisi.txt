@@ -1,0 +1,4 @@
+tambah terrain
+tambah awan
+tambah matahari
+tambah perintah panah bawah dan panah atas untuk membangun rumah dri mulai dasar

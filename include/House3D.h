@@ -19,7 +19,7 @@ class House3D{
             
       public:
              House3D();                   
-             void drawCreateHouse();
+             void drawCreateHouse(GLfloat draw);
              
              void draw1();
              void draw2();             
@@ -61,7 +61,7 @@ class House3D{
     		 void draw38();
     		 void draw39();
     		 void draw40();
-             
+             void draw41();             
              
              
              void drawBasePlate(GLint width, GLint length, Color color);
@@ -89,5 +89,7 @@ class House3D{
              void drawRidgedTile(GLint width, GLint angle, Color color);
              void drawEndRidgedTile(GLint angle, Color color);
              void drawMailBox(GLint angle);
+             void cloud();
+             void sun();
 };               
 #endif
