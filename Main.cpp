@@ -441,8 +441,8 @@ void init(void) {
 	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
 	
 
-	_terrain = loadTerrain("images/map.bmp", 20);
-	_terrainAir = loadTerrain("images/mapAir.bmp", 20);	
+	_terrain = loadTerrain("images/map.bmp", 30);
+	_terrainAir = loadTerrain("images/mapAir.bmp", 10);	
 
 	angle = 60;
 	cz    = 60;
